@@ -1,0 +1,54 @@
+
+
+@media (max-width: 768px) { 
+
+  .menu-open nav {
+    position: fixed; /* Changed to fixed to position it relative to the viewport */
+    right: 10px;
+  }
+
+
+   nav {
+      position: absolute;
+      background-color: rgba(12, 12, 12, 0.95);
+      display: flex !important;
+      flex-direction: column;
+      right: -255px;
+      top: 17px;
+      padding: 24px;
+      width: 30%;
+      transition: right 0.5s ease-in-out;
+      
+  }
+
+
+
+  nav a + a {
+    margin: 0;
+    margin-top: 16px;
+  }
+  
+  .space-x-0 > * + * {
+    margin-left: 0 !important;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: -7px;
+    right: 5px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .disp {
+    z-index: 10;
+    display: block;
+  }
+}
+
+
+
+
+
+ 
+
